@@ -1,1 +1,19 @@
+.regions {
+    fill: gray;
+    stroke: #CCC;
+    stroke-width: 1px;
+}
 
+.gratLines {
+    fill: none;
+    stroke: #999;
+    stroke-width: 1px;
+}
+
+.gratBackground {
+    fill: #D5E3FF;
+}
+
+.map {
+    border: medium solid #999;
+}
