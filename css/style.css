@@ -10,14 +10,88 @@
     stroke-width: 1px;
 }
 
+html {
+    background: url("http://geography.name/wp-content/uploads/2016/02/italy-sicily-stromboli-volcano-eruption.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 .gratBackground {
     fill: #C8DEEA;
+    opacity: 0.8;
 }
 
 .map {
-    border: medium solid #999;
-    margin: 10px 0 0 20px;
-    border-radius: 2em;
+    float: left;
+    border: medium solid #FFF;
+    margin: 2px 5px 5px 5px;
+    border-radius: 3em;
+}
+
+.infolabel {
+    position: absolute;
+    height: 50px;
+    min-width: 100px;
+    color: #000;
+    background-color: #fff;
+    border: solid thin #000;
+    padding: 5px 10px;
+    top: -75px;
+    border-radius: 1em;
+}
+.infolabel h1 {
+    margin: 0 20px 0 0;
+    padding: 0;
+    display: inline-block;
+    line-height: 1em;
+}
+
+#datesLabel {
+  float: right;
+  font-family: Arial, serif;
+  font-size: 20px;
+  color: white;
+  text-shadow:
+  -1px -1px 0 #000,
+   1px -1px 0 #000,
+   -1px 1px 0 #000,
+    1px 1px 0 #000;
+  margin: 40px 10px 30px 5px;
+}
+
+.dropdown {
+    position: absolute;
+    top: 27%;
+    right: 1%;
+    margin: 10px 10px 10px 20px;
+    font-family: sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 1px;
+    border: 1px solid #999;
+    box-shadow: 2px 2px 4px #999;
+}
+
+.titleLabel {
+  float: left;
+  margin: 5px 5px 2px 10px;
+  font-family: New Century Schoolbook, Helvetica, serif;
+  font-size: 80px;
+  padding: 1px;
+  z-index: 100;
+
+  color: white;
+  text-shadow:
+   -1px -1px 0 #FD8D3C,
+    1px -1px 0 #FD8D3C,
+    -1px 1px 0 #FD8D3C,
+     1px 1px 0 #FD8D3C,
+   -3px -3px 0 #000,
+    3px -3px 0 #000,
+    -3px 3px 0 #000,
+     3px 3px 0 #000;
 }
 
 .numbers {
@@ -25,38 +99,55 @@
     font-family: sans-serif;
 }
 
-.chart {
-    float: right;
-    margin: 7px 20px 0 0;
+option {
+    font-weight: normal;
 }
 
-.chartTitle {
-    font-family: sans-serif;
-    font-size: 1em;
-    font-weight: bold;
+.chart {
+    float: right;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 80px;
+    margin-bottom: 5px;
 }
 
 .chartBackground {
-    fill: rgba(128,128,128,.2);
+    fill: #C8DEEA;
+    opacity: 0.8;
 }
 
 .chartFrame {
     fill: none;
-    stroke: #999;
+    stroke: #FFF;
     stroke-width: 3px;
     shape-rendering: crispEdges;
+}
+
+#info-source {
+  position: fixed;
+  top: 98%;
+  right: 1%;
+  color: white;
+  font-size: 15px;
 }
 
 .axis path,
 .axis line {
     fill: none;
-    stroke: #999;
+    stroke: #FFF;
     stroke-width: 1px;
     shape-rendering: crispEdges;
 }
 
 .axis text {
     font-family: sans-serif;
-    font-size: 0.8em;
-    fill: #999;
+    font-size: 1em;
+    fill: #FFF;
+
+    color: white;
+    text-shadow:
+     -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
 }
